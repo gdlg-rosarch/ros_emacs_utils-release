@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+SLIME_ROS_DIR=$(rospack find slime_ros)
+
+[ -f ${HOME}/.sbclrc ] ||
+cp ${SLIME_ROS_DIR}/sbclrc ${HOME}/.sbclrc
