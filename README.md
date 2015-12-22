@@ -1,3 +1,29 @@
+## ros_emacs_utils (indigo) - 0.4.9-0
+
+The packages in the `ros_emacs_utils` repository were released into the `indigo` distro by running `/usr/bin/bloom-release ros_emacs_utils --track indigo --rosdistro indigo` on `Tue, 22 Dec 2015 12:51:46 -0000`
+
+These packages were released:
+- `ros_emacs_utils`
+- `rosemacs`
+- `roslisp_repl`
+- `slime_ros`
+- `slime_wrapper`
+
+Version of package(s) in repository `ros_emacs_utils`:
+- upstream repository: https://github.com/code-iai/ros_emacs_utils.git
+- release repository: https://github.com/code-iai-release/ros_emacs_utils-release.git
+- rosdistro version: `0.4.8-0`
+- old version: `0.4.8-0`
+- new version: `0.4.9-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.38`
+
+
 ## ros_emacs_utils (jade) - 0.4.8-0
 
 The packages in the `ros_emacs_utils` repository were released into the `jade` distro by running `/usr/bin/bloom-release ros_emacs_utils --track jade --rosdistro jade --new-track` on `Wed, 16 Sep 2015 17:24:42 -0000`
