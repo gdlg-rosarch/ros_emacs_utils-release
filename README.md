@@ -1,3 +1,31 @@
+## ros_emacs_utils (kinetic) - 0.4.9-0
+
+The packages in the `ros_emacs_utils` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release ros_emacs_utils --track kinetic --rosdistro kinetic` on `Mon, 18 Jul 2016 20:09:17 -0000`
+
+These packages were released:
+- `ros_emacs_utils`
+- `rosemacs`
+- `roslisp_repl`
+- `slime_ros`
+- `slime_wrapper`
+
+Version of package(s) in repository `ros_emacs_utils`:
+
+- upstream repository: https://github.com/code-iai/ros_emacs_utils.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.4.9-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## ros_emacs_utils (jade) - 0.4.9-0
 
 The packages in the `ros_emacs_utils` repository were released into the `jade` distro by running `/usr/bin/bloom-release ros_emacs_utils --track jade --rosdistro jade` on `Tue, 22 Dec 2015 12:55:58 -0000`
