@@ -1376,22 +1376,23 @@ else if not published yet, return the number -1, else return nil"
     (save-excursion
       (with-temp-buffer
         (call-process "find" nil t nil path "-name" "*.launch")
-        (let ((launch-files-with-path (split-string (buffer-string) "\n")))
+        (let ((launch-files-with-path (split-string (buffer-string) "\n" t)))
           (mapcar 'file-name-nondirectory launch-files-with-path))))))
 
 (defun ros-find-executables (pkg)
   (let ((ros-run-exec-paths nil)
-        (path (ros-package-path pkg)))
+        (paths (list (ros-package-path pkg) (catkin-path pkg))))
+    (dolist (path paths)
     (save-excursion
       (with-temp-buffer 
-        (call-process "find" nil t nil path "-perm" "-100" "!" "-type" "d")
+        (call-process "find" nil t nil path "-perm" "-111" "!" "-type" "d")
         (goto-char (point-min))
         (cl-loop
          (let ((pos (re-search-forward "^\\(.+\\)$" (point-max) t)))
            (if pos
                (let ((str (match-string 1)))
                  (push str ros-run-exec-paths))
-             (return))))))
+             (return)))))))
     (cl-sort (cl-map 'vector 'extract-exec-name ros-run-exec-paths) 'string<)))
 
 (defun ros-package-file-full-path (pkg file)
@@ -1408,6 +1409,15 @@ else if not published yet, return the number -1, else return nil"
       (goto-char (point-min))
       (re-search-forward "^\\(.*\\)$")
       (match-string 1))))
+
+(defun catkin-path (pkg)
+  (save-excursion
+    (with-temp-buffer
+      (call-process "catkin_find" nil t nil "--libexec" pkg)
+      (goto-char (point-min))
+      (re-search-forward "^\\(.*\\)$")
+      (match-string 1))))
+
 
 (defvar ros-run-keymap (make-sparse-keymap))
 (define-key ros-run-keymap "k" 'rosemacs/interrupt-process)
