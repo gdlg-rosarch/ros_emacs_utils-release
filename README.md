@@ -1,3 +1,31 @@
+## ros_emacs_utils (lunar) - 0.4.11-0
+
+The packages in the `ros_emacs_utils` repository were released into the `lunar` distro by running `/usr/bin/bloom-release ros_emacs_utils --track lunar --rosdistro lunar` on `Thu, 04 May 2017 11:30:24 -0000`
+
+These packages were released:
+- `ros_emacs_utils`
+- `rosemacs`
+- `roslisp_repl`
+- `slime_ros`
+- `slime_wrapper`
+
+Version of package(s) in repository `ros_emacs_utils`:
+
+- upstream repository: https://github.com/code-iai/ros_emacs_utils.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.4.11-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.1`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.1`
+- vcstools version: `0.1.39`
+
+
 ## ros_emacs_utils (kinetic) - 0.4.11-0
 
 The packages in the `ros_emacs_utils` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release ros_emacs_utils --track kinetic --rosdistro kinetic` on `Thu, 04 May 2017 11:24:16 -0000`
