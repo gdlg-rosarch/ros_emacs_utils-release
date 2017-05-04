@@ -1,0 +1,13 @@
+Source: ros-kinetic-ros-emacs-utils
+Section: misc
+Priority: extra
+Maintainer: Gayane Kazhoyan <kazhoyan@cs.uni-bremen.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-ros-emacs-utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-rosemacs, ros-kinetic-roslisp-repl, ros-kinetic-slime-ros, ros-kinetic-slime-wrapper
+Description: A metapackage of Emacs utils for ROS.
+ Only there for simplifying the release process.
